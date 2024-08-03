@@ -5,10 +5,10 @@ external dependencies. Can be used with any base image even scratch.
 
 ### Usage
 ```Dockerfile
-COPY --from=mwader/static-shaka-packager:2.5.1 /packager /usr/local/bin/
+COPY --from=plsr/static-shaka-packager:3.2.0 /packager /usr/local/bin/
 ```
 ```sh
-docker run --rm -u $UID:$GROUPS -v "$PWD:$PWD" -w "$PWD" mwader/static-shaka-packager:2.6.1 ...
+docker run --rm -u $UID:$GROUPS -v "$PWD:$PWD" -w "$PWD" plsr/static-shaka-packager:3.2.0 ...
 ```
 
 ### Files in the image
